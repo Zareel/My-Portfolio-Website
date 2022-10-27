@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="ico" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/c2afb85645.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav id="nav">
+          <div class="logo">
+            <h1><span>Z</span>areel</h1>
+          </div>
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header">
+          <div class="header-left">
+            <img src="./images/headerImg.png" alt="image" />
+          </div>
+          <div class="header-right">
+            <p>UI Developer</p>
+            <h1>
+              Hello, I'm <br />
+              <span>Zareel</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------end of header section------------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Self-taught Software Developer, passionate about coding and I
+              write clean code. Focused on learning. Currently attending Full
+              Stack JavaScript BootCamp @ iNeuron. Also looking for a full-time
+              career opportunity to apply my knowledge and skills as a Software
+              Developer.
+            </p>
+          </div>
+
+          <div class="about-col-2">
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span> <br />HTML, CSS, TailwindCSS
+                </li>
+                <li><span>Learning</span> <br />JavaScript / ReactJS</li>
+                <li>
+                  <span>Others & Tools</span> <br />Visual Studio Code, Git &
+                  GitHub, Netlify
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022- current</span> <br />FSJS Bootcamp @ iNeuron
+                </li>
+                <li><span>2019-2021</span> <br />Teaching students</li>
+                <li>
+                  <span>2009 - 2018</span> <br />
+                  Senior Media Executive at MCN, Dubai
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021- current</span> <br />Learning Web Development
+                </li>
+                <li><span>2016</span> <br />MBA- Human Resource Management</li>
+                <li>
+                  <span>2001</span> <br />BSc Family/ Community Science, from
+                  St.Teresa's College, EKM.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------services------------------------------ -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="sevices-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>HTML & CSS</h2>
+            <p>
+              Built and deployed 15 projects using core HTML and CSS. Seven of
+              them are made fully responsive on all devices
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div class="card-active">
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>TailwindCSS</h2>
+            <p>
+              Built and deployed user interface clones of Paytm,Shopify and Rode
+              website.Three of these TailwindCSS projects are fully responsive
+              on all screen sizes.
+            </p>
+            <a href="https://z-paytm-clone.netlify.app">Paytm</a
+            ><a href="https://z-shopify-clone-website.netlify.app">Shopify</a
+            ><a href="https://z-rode-website-clone.netlify.app">R0DE</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>JavaScript & ReactJS</h2>
+            <p>Currently learning JavaScript / ReactJS</p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------portfolio------------------------------ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/projectScreenshot01.png" alt="work" />
+            <div class="layer">
+              <h3>Street Style Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-street-style-landing-page.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot02.png" alt="work" />
+            <div class="layer">
+              <h3>Restaurant Home Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-restaurant-home-page.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot03.png" alt="work" />
+            <div class="layer">
+              <h3>Law Home Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="z-law-home-page.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot04.png" alt="work" />
+            <div class="layer">
+              <h3>Digital Marketing Home Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-digital-marketing-home-page.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot05.png" alt="work" />
+            <div class="layer">
+              <h3>Crypto Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-crypto-landing-page.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot06.png" alt="work" />
+            <div class="layer">
+              <h3>Plant Home Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-plant-home-page.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot07.png" alt="work" />
+            <div class="layer">
+              <h3>Product Home Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-product-home-page.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot08.png" alt="work" />
+            <div class="layer">
+              <h3>Web Design Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://design-landing08.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="work">
+            <img src="./images/projectScreenshot09.png" alt="work" />
+            <div class="layer">
+              <h3>Develpoer Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div> -->
+          <div class="work">
+            <img src="./images/projectScreenShot10.png" alt="work" />
+            <div class="layer">
+              <h3>Interior Design Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-interior-disign-landing-page.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot11.png" alt="work" />
+            <div class="layer">
+              <h3>Hosting Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-hosting-landing-page.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot12.png" alt="work" />
+            <div class="layer">
+              <h3>Business Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://business-landing-page-website.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot13.png" alt="work" />
+            <div class="layer">
+              <h3>SAAS Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://creative-zar-saas-landing-page.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot14.png" alt="work" />
+            <div class="layer">
+              <h3>Creativity Home Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-creativity-home-page.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/projectScreenshot15.png" alt="work" />
+            <div class="layer">
+              <h3>Product Design Landing Page</h3>
+              <p>Technologies used: HTML and CSS</p>
+              <a href="https://z-product-design-landing-page.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#">See More</a>
+      </div>
+    </div>
+    <!-- ------------------Contact---------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>zareelbwd@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>9744333367</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/zareel.kalam"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/zareel-kalam-2a3a85249/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="./images/my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p>
+          copywrite @ Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy
+          Tutorial
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "<https://script.google.com/macros/s/AKfycbwh9_hcxPADx3euzBsN7HCJwVTgL5qe4tFguMoACIVV-vLgHaG5otDMDYZI9XZxXZphXA/exec>";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById(msg);
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
